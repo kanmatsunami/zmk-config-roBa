@@ -1,5 +1,5 @@
 // スクロール速度の定義（値は例です）
-#define zmk_pointing_default_scl_val 10  
+#define zmk_pointing_default_scrl_val 10  
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
