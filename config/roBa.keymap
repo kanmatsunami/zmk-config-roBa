@@ -1,5 +1,6 @@
 // スクロール速度の定義（値は例です）
-#define zmk_pointing_default_scrl_val 10  
+
+#define zmk_pointing_default_scrl_val 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -97,7 +98,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                       &kp T                                                  &kp Y        &kp U  &lt 4 I    &kp O    &kp P
 &lt 1 A           &kp S         &kp D         &kp F                       &kp G        &kp PLUS                       &kp PG_UP  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B        &lt 1 TAB                      &kp PG_DN  &kp N        &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B        &lt 1 TAB                      &kp PG_DN  &lt 5 N      &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LA(GRAVE)  &lt 2 SPACE  &lt_to_layer_0 3 LC(CLCK)      &mkp LCLK  &lt 1 ENTER                             &lt 4 ENTER
             >;
 
