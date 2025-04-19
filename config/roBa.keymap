@@ -96,10 +96,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                       &kp T                                                  &kp Y        &kp U  &lt 4 I    &kp O    &kp P
-&lt 1 A           &kp S         &kp D         &kp F                       &kp G        &kp PLUS                       &kp PG_UP  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                       &kp B        &lt 1 TAB                      &kp PG_DN  &lt 5 N      &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LA(GRAVE)  &lt 2 SPACE  &lt_to_layer_0 3 LC(CLCK)      &mkp LCLK  &lt 1 ENTER                             &lt 4 ENTER
+&kp Q             &kp W         &kp E         &kp R                      &kp T                                              &kp Y        &kp U  &lt 4 I    &kp O    &kp P
+&lt 1 A           &kp S         &kp D         &kp F                      &kp G        &kp PLUS                   &kp PG_UP  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                      &kp B        &lt 1 TAB                  &kp PG_DN  &lt 5 N      &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 UP_ARROW  &lt 2 SPACE  &lt_to_layer_0 3 DOWN      &mkp LCLK  &lt 1 ENTER                             &lt 4 LA(GRAVE)
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -119,7 +119,7 @@
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &kp LG(TAB)      &kp LA(TAB)      &trans        &kp LC(TAB)                  &trans          &trans                                                                     &kp PIPE
+&trans                      &trans           &kp LG(TAB)      &kp LEFT         &trans        &kp RIGHT                    &kp LA(TAB)     &kp LC(TAB)                                                                &kp PIPE
             >;
         };
 
