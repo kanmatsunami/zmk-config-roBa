@@ -70,7 +70,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -89,17 +89,6 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            bindings = <
-&kp Q                &kp W         &kp E         &kp R                  &kp T                                                  &kp Y        &kp U  &lt 4 I    &kp O    &kp P
-&lt 1 A              &kp S         &kp D         &kp F                  &kp G        &kp PLUS                    &kp UP_ARROW  &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z     &kp X         &kp C         &kp V                  &kp B        &lt 1 TAB                   &kp DOWN      &lt 5 N      &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
-&mt LCTRL LA(GRAVE)  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LEFT  &lt 2 SPACE  &lt_to_layer_0 3 RIGHT      &mkp LCLK     &lt 1 ENTER                             &lt 4 ENTER
-            >;
-
-            sensor-bindings = <&inc_dec_kp A B>;
-        };
-
         FUNCTION {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3   &kp NUMBER_4  &kp N5                                            &kp NUMBER_6  &kp N7          &kp N8           &kp N9   &kp N0
@@ -107,6 +96,19 @@
 &kp GRAVE     &kp AT_SIGN   &kp PERCENT    &kp MINUS     &kp EQUAL  &kp C_VOLUME_DOWN      &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F11  &kp DEL
 &kp SLASH     &kp PLUS      &kp SEMICOLON  &kp COLON     &kp SQT    &kp QUESTION           &trans          &trans                                                  &kp F12
             >;
+        };
+
+        default_layer {
+            bindings = <
+&kp Q                &kp W         &kp E         &kp R                  &kp T                                                  &kp Y        &kp U  &lt 4 I    &kp O    &kp P
+&lt 0 A              &kp S         &kp D         &kp F                  &kp G        &kp TAB                     &kp UP_ARROW  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z     &kp X         &kp C         &kp V                  &kp B        &lt 0 TAB                   &kp DOWN      &lt 5 N      &kp M  &kp COMMA  &kp DOT  &kp BACKSPACE
+&mt LCTRL LA(GRAVE)  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LEFT  &lt 2 SPACE  &lt_to_layer_0 3 RIGHT      &mkp LCLK     &lt 0 ENTER                             &lt 4 ENTER
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp DOWN UP_ARROW>,
+                <&inc_dec_kp UP_ARROW DOWN>;
         };
 
         NUM {
